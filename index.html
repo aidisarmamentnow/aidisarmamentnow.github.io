@@ -6,17 +6,12 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   --bg: #efefef;
   --fg: #1e1e1e;
-  --primary: rgb(231, 59, 147);
-  --secondary: rgb(62, 140, 116);
-  --tertiary: rgb(226, 110, 44);
-
-  background-color: var(--bg);
-  color: var(--fg);
-  font-size: calc(.85em + 1vw);
-  line-height: 1.3;
+  --primary: #a06666;
+  --secondary: #5f8787;
+  --tertiary: #dd9999;
 
   @media (prefers-color-scheme: dark) {
     --bg: #1e1e1e;
@@ -24,7 +19,28 @@ html {
   }
 }
 
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-size: 18px;
+  line-height: 1.3;
+  border: 5px solid var(--secondary);
+}
+
+header {
+  border-bottom: 5px solid var(--secondary);
+}
+
+h1 {
+  line-height: 1;
+}
+
 body {
+  margin: 0;
+}
+
+main,
+header p {
   margin: 0 auto;
   padding: 1em;
   max-width: 40em;
@@ -37,7 +53,8 @@ a:hover, a:focus {
   color: var(--secondary);
 }
 a:active {
-  color: var(--tertiary);
+  position: relative;
+  top: 1px;
 }
 
 img {
@@ -50,101 +67,105 @@ img {
 <meta property="og:description" content="We don't trust the free market to develop nuclear weapons. Neither should we trust it to develop AI. Seize the companies.">
 <meta property="og:url" content="https://aidisarmamentnow.org">
 <meta property="og:image" content="https://imgs.xkcd.com/comics/robot_future_2x.png">
-<!-- <meta name="twitter:card" content="summary_large_image"> -->
+<meta name="twitter:card" content="summary_large_image">
 
 </head>
 <body>
 
-<h1>AI Disarmament Now!</h1>
-
-<p>
-In 18 whatever whatever, the Schuylkill River LIT ON FIRE. So polluted had it become by the Forces Of Noble Or At Least Unstoppable Progress ("what are we to do" the people shrugged, "money to be made," the people shrugged, "we all like what they're making," the people shrugged) that one stray spark was all it took to convert Philadelphia's erstwhile life-source into an inferno.
-</p>
-
-<p>
-Look out your window. Look out the tiny window in your hand onto the world of information. You do not need me to tell you; you can already feel it; you already lament it: the river is on fire again. Stop shrugging!
-</p>
-
-<p>
-In the 1920s, their heads needed not swivel when children entered the street. Cities were safe for play and dangerous for "jay-drivers," the reckless owners of newfangled automobiles, carelessly clobbering kids. "Don't blame the drivers," said the industry in papers, in lobbies. "Don't blame the manufacturer. Blame the kids." And in a decade, a generation, of propoganda, blame swapped from "jay-drivers" to "jay-walkers", and the industry convinced the world to reorganize; convinced cities and countries to spend millions on traffic lights, asphalt, and highways; convinced vast regions to rip out pre-existing rail systems, piling street cars in great pyres to please the gods of Progress; convinced nations to accept soaring rates of needless death; externalities all justified by the automotive bottom-line.
-</p>
-
-<p>
-Look out your window. They're at it again. They'll burn everything you love to make a profit. Stop shrugging!
-</p>
-
-<p>
-In the 1960s, fossil magnates invented litter. "Our future is in the trash," they said at their conferences, and laid out the plan: every beverage, every foodstuff, to be wrapped in single-use plastic; to print meaningless "recycling" icons on the bottoms; decades of commercials to shift blame from themselves, the manufacturerer, to "litterbugs." To individuals. To Personal Responsibility. At enormous and still-untallied cost—mountains scraped to chasms at taxpayer expense, filled with rubbish; country-sized gyres and plastic-burst albatros bellies; plastic-filled blood and endocrine systems—every beach, every community, every organism on the planet absorbed the externalities to protect executive salaries.
-</p>
-
-<p>
-Look out your window. They're doing it again. Stop shrugging.
-</p>
-
-<p>
-Now AI companies host "public education" conferences where Meta representatives lead panels on "how to protect teen mental health." The gall! As if they haven't spent the last two decades profiteering off the wholesale destruction of mental health, teen and otherwise. This is the company that will put uncontrollable AI bots in front of children and then "teach" you that it's your fault when things go poorly.
-</p>
-
-<p>
-They're doing it again. The river is on fire.
-</p>
-
-<h1>It might kill us all?</h1>
-
-<p>
-Sure, maybe.
-</p>
-
-<p>
-Smart people put the chances alarmingly high. "20% chance of human extinction" kind of predictions.
-</p>
-
-<p>
-That's high! Try to think of something higher. How many nukes would it take to kill <em>every single human?</em> Sure, sure, it doesn't take <em>that</em> many nukes to create a years-long global winter, for everyone in the northern hemisphere to die, for civilizational reset. But even then, <em>everyone</em> dead? Every single human? Probably some pull through. A million humans, say. Lasting another thousand, another ten thousand years? Eventually rebuilding a technological society?
-</p>
-
-<p>
-20% chance of killing <em>every single human</em>.
-</p>
-
-<h1>But even if not: <em>we don't want that world</em></h1>
-
-<a href="https://xkcd.com/1968/"><img src="https://imgs.xkcd.com/comics/robot_future_2x.png" title="I mean, we already live in a world of flying robots killing people. I don't worry about how powerful the machines are, I worry about who the machines give power to." alt="The point in the farther-future most people seem to worry about: AI becomes self-aware and rebels against human control. The point nearer-future I worry about: AI becomes advanced enough to control unstoppable swarms of killer robots." /></a>
-
-<blockquote cite="https://xkcd.com/1968/">
+<header>
   <p>
-    I don't worry about how powerful the machines are, I worry about who the machines give power to.
+    This manifesto is a work in progress. <a href="https://github.com/aidisarmamentnow/aidisarmamentnow.github.io">Help shape it!</a>
   </p>
-</blockquote>
+</header>
 
-<p>
-The river is already on fire. We don't want their world.
-</p>
+<main>
+  <h1>AI Disarmament Now!</h1>
 
-<h1>AI Disarmament Now!</h1>
+  <p>
+  In 18 whatever whatever, the Schuylkill River LIT ON FIRE. So polluted had it become by the Forces Of Noble Or At Least Unstoppable Progress ("what are we to do" the people shrugged, "money to be made," the people shrugged, "we all like what they're making," the people shrugged) that one stray spark was all it took to convert Philadelphia's erstwhile life-source into an inferno.
+  </p>
 
-<p>
-We don't trust the free market to develop nuclear weapons.
-</p>
+  <p>
+  Look out your window. Look out the tiny window in your hand onto the world of information. You do not need me to tell you; you can already feel it; you already lament it: the river is on fire again. Stop shrugging!
+  </p>
 
-<p>
-Neither should we trust it to develop AI.
-</p>
+  <p>
+  In the 1920s, their heads needed not swivel when children entered the street. Cities were safe for play and dangerous for "jay-drivers," the reckless owners of newfangled automobiles, carelessly clobbering kids. "Don't blame the drivers," said the industry in papers, in lobbies. "Don't blame the manufacturer. Blame the kids." And in a decade, a generation, of propoganda, blame swapped from "jay-drivers" to "jay-walkers", and the industry convinced the world to reorganize; convinced cities and countries to spend millions on traffic lights, asphalt, and highways; convinced vast regions to rip out pre-existing rail systems, piling street cars in great pyres to please the gods of Progress; convinced nations to accept soaring rates of needless death; externalities all justified by the automotive bottom-line.
+  </p>
 
-<p>
-Seize the companies.
-</p>
+  <p>
+  Look out your window. They're at it again. They'll burn everything you love to make a profit. Stop shrugging!
+  </p>
 
-<p>
-  Do all frontier AI training and research via strict and strictly-monitored international protocol.
-</p>
+  <p>
+  In the 1960s, fossil magnates invented litter. "Our future is in the trash," they said at their conferences, and laid out the plan: every beverage, every foodstuff, to be wrapped in single-use plastic; to print meaningless "recycling" icons on the bottoms; decades of commercials to shift blame from themselves, the manufacturerer, to "litterbugs." To individuals. To Personal Responsibility. At enormous and still-untallied cost—mountains scraped to chasms at taxpayer expense, filled with rubbish; country-sized gyres and plastic-burst albatros bellies; plastic-filled blood and endocrine systems—every beach, every community, every organism on the planet absorbed the externalities to protect executive salaries.
+  </p>
 
-<p>
-  The way the we govern Antarctica. The way we govern space. The way we govern nukes.
-</p>
+  <p>
+  Look out your window. They're doing it again. Stop shrugging.
+  </p>
 
+  <p>
+  Now AI companies host "public education" conferences where Meta representatives lead panels on "how to protect teen mental health." The gall! As if they haven't spent the last two decades profiteering off the wholesale destruction of mental health, teen and otherwise. This is the company that will put uncontrollable AI bots in front of children and then "teach" you that it's your fault when things go poorly.
+  </p>
 
+  <p>
+  They're doing it again. The river is on fire.
+  </p>
 
+  <h1>It might kill us all?</h1>
 
+  <p>
+  Sure, maybe.
+  </p>
+
+  <p>
+  Smart people put the chances alarmingly high. "20% chance of human extinction" kind of predictions.
+  </p>
+
+  <p>
+  That's high! Try to think of something higher. How many nukes would it take to kill <em>every single human?</em> Sure, sure, it doesn't take <em>that</em> many nukes to create a years-long global winter, for everyone in the northern hemisphere to die, for civilizational reset. But even then, <em>everyone</em> dead? Every single human? Probably some pull through. A million humans, say. Lasting another thousand, another ten thousand years? Eventually rebuilding a technological society?
+  </p>
+
+  <p>
+  20% chance of killing <em>every single human</em>.
+  </p>
+
+  <h1>But even if not: <em>we don't want that world</em></h1>
+
+  <a href="https://xkcd.com/1968/"><img src="https://imgs.xkcd.com/comics/robot_future_2x.png" title="I mean, we already live in a world of flying robots killing people. I don't worry about how powerful the machines are, I worry about who the machines give power to." alt="The point in the farther-future most people seem to worry about: AI becomes self-aware and rebels against human control. The point nearer-future I worry about: AI becomes advanced enough to control unstoppable swarms of killer robots." /></a>
+
+  <blockquote cite="https://xkcd.com/1968/">
+    <p>
+      I don't worry about how powerful the machines are, I worry about who the machines give power to.
+    </p>
+  </blockquote>
+
+  <p>
+  The river is already on fire. We don't want their world.
+  </p>
+
+  <h1>AI Disarmament Now!</h1>
+
+  <p>
+  We don't trust the free market to develop nuclear weapons.
+  </p>
+
+  <p>
+  Neither should we trust it to develop AI.
+  </p>
+
+  <p>
+  Seize the companies.
+  </p>
+
+  <p>
+    Do all frontier AI training and research via strict and strictly-monitored international protocol.
+  </p>
+
+  <p>
+    The way the we govern Antarctica. The way we govern space. The way we govern nukes.
+  </p>
+</main>
 </body>
 </html>
